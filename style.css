@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.bg_gradient {
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* !<!-- !Navbar start --> */
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: coral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.navbar__link:hover {
+  color: aqua;
+}
+
+/* !<!-- !Navbar end --> */
+
+/* !header start */
+.header {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: gray;
+}
+
+.header__logo {
+  color: inherit;
+  text-decoration: none;
+}
+/* !header end */
+
+/* !Intro start */
+.intro {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.intro_container {
+  display: flex;
+}
+
+.intro__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro__title {
+  font-size: 48px;
+  line-height: 1.1;
+  text-align: center;
+}
+.intro__subtitle {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.intro__box {
+  max-width: 600px;
+  justify-self: center;
+  align-self: center;
+  margin: 60px 0;
+  border: 10px solid white;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+  animation: img-animate 6s infinite alternate;
+}
+
+@keyframes img-animate {
+  0% {
+    border-radius: 68% 32% 70% 30% / 30% 33% 67% 70%;
+  }
+  40% {
+    border-radius: 54% 46% 57% 43% / 60% 46% 54% 40%;
+  }
+  60% {
+    border-radius: 29% 71% 33% 67% / 68% 30% 70% 32%;
+  }
+  100% {
+    border-radius: 12% 88% 15% 85% / 80% 12% 88% 20%;
+  }
+}
+/* !Intro end */
+
+/*! Footer start  */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__link {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: black;
+  transition: color 0.3;
+}
+
+.footer__link:hover {
+  color: dodgerblue;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* !Footer end */
